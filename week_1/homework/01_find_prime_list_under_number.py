@@ -5,10 +5,11 @@ def find_prime_list_under_number(number):
     prime_list = []
     for n in range(2, number + 1):
         for i in prime_list:
-            if n % i == 0 and i*i <= n:
+            if n % i == 0:
                 break
-        else:
-            prime_list.append(n)
+            elif i*i >= n:
+                prime_list.append(n)
+                break
 
     return prime_list
 
