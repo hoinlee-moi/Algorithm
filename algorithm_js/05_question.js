@@ -1,22 +1,23 @@
 //https://www.acmicpc.net/problem/4344
 
-let input = require('fs').readFileSync('test.txt').toString().split('\n');
+let input = require('fs').readFileSync('/dev/stdin').toString().split('\n');
 
-let case_all = Number(input[0])
-let score_all = []
-let total_score = []
-let avg = []
-let total = 0
-for(i=0; i<case_all; i++) {
-    score_all[i] = input[i+1]
-    console.log(score_all[i])
-    for(j=0; j < score_all[j][0] ; j++) {
-        console.log(score_all[j])
-        // total += score_all[j][j+1]
+let case_all = input[0]
+
+for(let i =1; i <= case_all; i++) {
+    let score = input[i].split(' ');
+    let case2 = score.shift()
+    let count = 0;
+
+    let avg = score.reduce((acc,value) => acc + value*1,0)
+    avg /= case2
+
+    for (let j =0; j<case2; j++) {
+        if(score[j]>avg) {
+            count++
+        }
     }
+    let result = ((count / case2)*100).toFixed(3);
+    console.log(`${result}%`)
 }
 
-// for(j=0; j < score.length; j++ ) {
-//     total += score[j]
-// }
-// console.log(total)
