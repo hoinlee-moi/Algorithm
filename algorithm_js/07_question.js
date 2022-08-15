@@ -62,3 +62,5 @@ function solution(str) {
     }
     console.log(result);
 }
+
+//짧게 푼 사람 https://onelight-stay.tistory.com/368 체크해보자
