@@ -31,4 +31,4 @@ function solution(n) {
     return Number.isInteger(Math.sqrt(n))? 1 : 2;
 }
 
-//Number객체의 isInteger이란 정수 실수 판별자를 활용(true와 false를 반환)하여 삼항연산자를 사용
+//Number객체의 isInteger이란 정수 실수 판별자를 활용(true와 false를 반환)하여 삼항연산자를 사용, Math 객체의 sqrt 함수를 이용해 제곱수를 검사
