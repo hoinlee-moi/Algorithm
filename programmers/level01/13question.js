@@ -1,9 +1,3 @@
-// https://school.programmers.co.kr/learn/courses/30/lessons/120889\
-
-const sides = [199,72,222]
-console.log(Math.max(...sides))
-
-
 // https://school.programmers.co.kr/learn/courses/30/lessons/120889#
 
 function solution(sides) {
