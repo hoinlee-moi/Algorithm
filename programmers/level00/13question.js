@@ -34,3 +34,23 @@ function solution(sides) {
 /*
 sides를 sort로 오름차순 시키면 가장 큰 값이 뒤로 가서 더 쉽게 쓸 수 있다.
 */
+
+
+// https://school.programmers.co.kr/learn/courses/30/lessons/120848#
+
+function solution(n) {
+    let multiply = 1;
+    for(let i = 1; i<=n; i++){
+        multiply *= i 
+        if(multiply>n){
+            i--
+            return i
+        }
+    }
+    return multiply
+}
+
+/*
+팩토리얼 문제로 반복문을 이용해 점차 곱셈으로 증가하는 수를 만들었고 그 숫자가 n보다 커질시 이미 곱셈이 넘어간 것이기 때문에 --한 값을 받도록 했다.
+이 과정에서 1일 경우엔 if문이 1번 재생되어 if조건식이 걸리지 않고 undefined가 되기 때문에 기본적으론 1을 return하도록 함
+*/
