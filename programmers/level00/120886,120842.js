@@ -1,4 +1,4 @@
-//https://school.programmers.co.kr/learn/courses/30/lessons/120886
+//https://school.programmers.co.kr/learn/courses/30/lessons/120886  A로 B 만들기
 
 function solution(before, after) {
     let beforeArr = before.split('').sort()
@@ -22,7 +22,7 @@ function solution(before, after) {
 
 
 
-//https://school.programmers.co.kr/learn/courses/30/lessons/120842
+//https://school.programmers.co.kr/learn/courses/30/lessons/120842  2차원으로 만들기
 
 function solution(num_list, n) {
     let answer = []

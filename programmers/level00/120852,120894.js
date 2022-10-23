@@ -1,4 +1,4 @@
-// https://school.programmers.co.kr/learn/courses/30/lessons/120852
+// https://school.programmers.co.kr/learn/courses/30/lessons/120852 소인수분해
 
 function solution(n) {
     var answer = [];
@@ -26,7 +26,7 @@ const isPrime = num => {
 */
 
 
-// https://school.programmers.co.kr/learn/courses/30/lessons/120894
+// https://school.programmers.co.kr/learn/courses/30/lessons/120894  영어가 싫어요
 
 
 function solution(numbers) {

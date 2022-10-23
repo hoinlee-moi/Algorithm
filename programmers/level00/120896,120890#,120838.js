@@ -1,4 +1,4 @@
-// https://school.programmers.co.kr/learn/courses/30/lessons/120896
+// https://school.programmers.co.kr/learn/courses/30/lessons/120896  한 번만 등장하는 문자
 
 function solution(s) {
     let answer = []
@@ -13,6 +13,7 @@ function solution(s) {
     }
     return answer.sort().join('');
 }
+
 
 /*
 왜 이렇게 하드코딩만 생각나는지 모르겠다. 일단 중복값을 제외한 배열을 set을 이용해 구한뒤 그 값들을 본래의 s문자열과 비교하여 하나만 존재한다면 정답 배열에 집어넣도록 만들었다.
@@ -31,7 +32,7 @@ function solution(s) {
 
 
 
-//https://school.programmers.co.kr/learn/courses/30/lessons/120890#
+//https://school.programmers.co.kr/learn/courses/30/lessons/120890#  가까운 수
 
 
 function solution(array, n) {
@@ -48,8 +49,8 @@ function solution(array, n) {
 */
 
 
-
-//https://school.programmers.co.kr/learn/courses/30/lessons/120838
+ 
+//https://school.programmers.co.kr/learn/courses/30/lessons/120838  모스부호
 
 
 function solution(letter) {

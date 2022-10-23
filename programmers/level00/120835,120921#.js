@@ -1,4 +1,4 @@
-// https://school.programmers.co.kr/learn/courses/30/lessons/120835
+// https://school.programmers.co.kr/learn/courses/30/lessons/120835 진료순서정하기
 
 function solution(emergency) {
     const emergencySort = [...emergency]
@@ -13,7 +13,7 @@ function solution(emergency) {
 */
 
 
-// https://school.programmers.co.kr/learn/courses/30/lessons/120921#
+// https://school.programmers.co.kr/learn/courses/30/lessons/120921# 문자열 밀기
 
 
 function solution(A, B) {

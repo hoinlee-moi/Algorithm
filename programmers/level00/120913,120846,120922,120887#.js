@@ -1,4 +1,4 @@
-// https://school.programmers.co.kr/learn/courses/30/lessons/120913
+// https://school.programmers.co.kr/learn/courses/30/lessons/120913  잘라서 배열로 저장하기
 
 function solution(my_str, n) {
     let answer = [];
@@ -22,7 +22,7 @@ function solution(my_str, n) {
 */
 
 
-// https://school.programmers.co.kr/learn/courses/30/lessons/120846
+// https://school.programmers.co.kr/learn/courses/30/lessons/120846  합성수 찾기
 
 function solution(n) {
     var answer = 0;
@@ -39,7 +39,7 @@ function solution(n) {
 */
 
 
-// https://school.programmers.co.kr/learn/courses/30/lessons/120922
+// https://school.programmers.co.kr/learn/courses/30/lessons/120922  종이자르기
 
 function solution(M, N) {
     var answer = (M*N)-1;
@@ -47,11 +47,11 @@ function solution(M, N) {
 }
 
 /*
-그냥 수학적 사고로 인식해서 해결했다 딱히 어떤 공식이나 프로그래밍을 이용하지 않았다.
+그냥 수학적 사고로 인식해서 해결했다 딱히 어떤 공식이나 프로그래밍을 이용하진 않고 문제와 정답사이의 규칙을 도출해냄.
 */
 
 
-// https://school.programmers.co.kr/learn/courses/30/lessons/120887#
+// https://school.programmers.co.kr/learn/courses/30/lessons/120887#  k의 개수
 
 function solution(i, j, k) {
     let answer = 0;

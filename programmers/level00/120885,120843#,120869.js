@@ -1,4 +1,4 @@
-// https://school.programmers.co.kr/learn/courses/30/lessons/120885
+// https://school.programmers.co.kr/learn/courses/30/lessons/120885  이진수더하기
 
 function solution(bin1, bin2) {
     var answer = parseInt(bin1,2)+parseInt(bin2,2)
@@ -10,7 +10,7 @@ function solution(bin1, bin2) {
 */
 
 
-// https://school.programmers.co.kr/learn/courses/30/lessons/120843#
+// https://school.programmers.co.kr/learn/courses/30/lessons/120843#  공던지기
 
 function solution(numbers, k) {
     return numbers[(--k*2)%numbers.length];
@@ -21,7 +21,7 @@ function solution(numbers, k) {
 */
 
 
-// https://school.programmers.co.kr/learn/courses/30/lessons/120869?language=javascript
+// https://school.programmers.co.kr/learn/courses/30/lessons/120869?language=javascript  외계어사전
 
 
 function solution(spell, dic) {

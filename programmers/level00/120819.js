@@ -1,9 +1,9 @@
-//https://school.programmers.co.kr/learn/courses/30/lessons/120819
+//https://school.programmers.co.kr/learn/courses/30/lessons/120819  아이스아메리카노
 
 function solution(money) {
     let answer = [];
     let americano = parseInt(money/5500)
-    let change = parseInt(money % 5500)
+    let change = parseInt(money % 5500)ㄴ
     answer.push(americano,change)
     return answer;
 }
