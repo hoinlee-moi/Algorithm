@@ -1,4 +1,4 @@
-//https://school.programmers.co.kr/learn/courses/30/lessons/120847
+//https://school.programmers.co.kr/learn/courses/30/lessons/120847  최댓값 만들기(1)
 
 function solution(numbers) {
     numbers.sort((a,b) =>  b - a);
@@ -9,7 +9,7 @@ function solution(numbers) {
 //주어진 배열이 있고 가장 큰 수 2개를 곱해야 하기 때문에 sort함수를 써서 내림차순을 이용하여 계산함.
 
 
-//https://school.programmers.co.kr/learn/courses/30/lessons/120849
+//https://school.programmers.co.kr/learn/courses/30/lessons/120849  모음제거
 
 function solution(my_string) {
     let vowel = ['a','e','i','o','u']

@@ -1,4 +1,4 @@
-// https://school.programmers.co.kr/learn/courses/30/lessons/120811
+// https://school.programmers.co.kr/learn/courses/30/lessons/120811  중앙값 구하기
 
 function solution(array) {
     const center = parseInt(array.length/2);
@@ -34,7 +34,7 @@ function solution(my_string) {
  */
 
 
-// https://school.programmers.co.kr/learn/courses/30/lessons/120836
+// https://school.programmers.co.kr/learn/courses/30/lessons/120836  순서쌍의 개수
 
 function solution(n) {
     let answer = 0;

@@ -1,4 +1,4 @@
-//https://school.programmers.co.kr/learn/courses/30/lessons/120823?language=javascript
+//https://school.programmers.co.kr/learn/courses/30/lessons/120823?language=javascript  직각삼각형 출력하기
 
 const readline = require('readline');
 const rl = readline.createInterface({
@@ -20,7 +20,7 @@ rl.on('line', function (line) {
 */
 
 
-//https://school.programmers.co.kr/learn/courses/30/lessons/120851?language=javascript
+//https://school.programmers.co.kr/learn/courses/30/lessons/120851?language=javascript  숨어있는 숫자의 덧셈(1)
 
 function solution(my_string) {
     let number = my_string.replace(/[^0-9]/g, "");

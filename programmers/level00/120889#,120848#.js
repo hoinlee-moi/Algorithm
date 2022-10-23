@@ -1,4 +1,4 @@
-// https://school.programmers.co.kr/learn/courses/30/lessons/120889#
+// https://school.programmers.co.kr/learn/courses/30/lessons/120889#  삼각형의 완성조건(1)
 
 function solution(sides) {
     const maxNum = Math.max(...sides)
@@ -36,7 +36,7 @@ sides를 sort로 오름차순 시키면 가장 큰 값이 뒤로 가서 더 쉽�
 */
 
 
-// https://school.programmers.co.kr/learn/courses/30/lessons/120848#
+// https://school.programmers.co.kr/learn/courses/30/lessons/120848#  팩토리얼
 
 function solution(n) {
     let multiply = 1;

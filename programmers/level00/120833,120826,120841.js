@@ -1,4 +1,4 @@
-// https://school.programmers.co.kr/learn/courses/30/lessons/120833
+// https://school.programmers.co.kr/learn/courses/30/lessons/120833  배열자르기
 
 function solution(numbers, num1, num2) {
     return numbers.slice(num1, num2+1);
@@ -10,7 +10,7 @@ function solution(numbers, num1, num2) {
  */
 
 
-//https://school.programmers.co.kr/learn/courses/30/lessons/120826
+//https://school.programmers.co.kr/learn/courses/30/lessons/120826  특정 문자 제거하기
 
 function solution(my_string, letter) {
     return my_string.split(letter).join('')
@@ -23,7 +23,7 @@ Array.from(my_string).filter(t => t !== letter).join(''); // 같은 문제를 fi
 my_string.replaceAll(letter, ''); // relace를 이용한 방식도 볼 수 있었다. 0.03ms
 
 
-// https://school.programmers.co.kr/learn/courses/30/lessons/120841
+// https://school.programmers.co.kr/learn/courses/30/lessons/120841  점의위치구하기
 
 function solution(dot) {
     let answer = 0;

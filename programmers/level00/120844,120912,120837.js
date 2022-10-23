@@ -1,4 +1,4 @@
-// https://school.programmers.co.kr/learn/courses/30/lessons/120844
+// https://school.programmers.co.kr/learn/courses/30/lessons/120844  배열 회전시키기
 
 function solution(numbers, direction) {
     if(direction === 'right') {
@@ -15,7 +15,7 @@ unshift로 오른쪽으로 옮김과 동시에 pop으로 제거 pop으로 제거
 shift는 한수를 왼쪽으로 밀며 제거한 요소를 구할 수 있는데 shift를 이용해 왼쪽으로 밀며 구한 값을 push로 집어 넣는다.
 */
 
-// https://school.programmers.co.kr/learn/courses/30/lessons/120912
+// https://school.programmers.co.kr/learn/courses/30/lessons/120912  7의 개수
 
 
 function solution(array) {
@@ -36,8 +36,7 @@ function solution(array) {
 */
 
 
-
-// https://school.programmers.co.kr/learn/courses/30/lessons/120837
+// https://school.programmers.co.kr/learn/courses/30/lessons/120837  개미군단
 
 function solution(hp) {
     let answer = 0;

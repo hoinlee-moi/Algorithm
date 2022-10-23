@@ -1,4 +1,4 @@
-// https://school.programmers.co.kr/learn/courses/30/lessons/120809
+// https://school.programmers.co.kr/learn/courses/30/lessons/120809  배열 두 배 만들기
 
 function solution(numbers) {
     return numbers.map(num => num*2);
@@ -9,7 +9,7 @@ function solution(numbers) {
 */
 
 
-//https://school.programmers.co.kr/learn/courses/30/lessons/120839
+//https://school.programmers.co.kr/learn/courses/30/lessons/120839  가위 바위 보
 
 function solution(rsp) {
     let answer = rsp.split('').map(str =>{
@@ -26,7 +26,7 @@ function solution(rsp) {
 다른 사람 풀이를 확인하니 if else도 있고 switch case도 있으며 객체로 두어 해결하는 다양한 방법이 있었다.
 */
 
-//https://school.programmers.co.kr/learn/courses/30/lessons/120895
+//https://school.programmers.co.kr/learn/courses/30/lessons/120895  인덱스 바꾸기
 
 function solution(my_string, num1, num2) {
     const num1Str = my_string[num1]

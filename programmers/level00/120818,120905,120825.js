@@ -1,4 +1,4 @@
-// https://school.programmers.co.kr/learn/courses/30/lessons/120818
+// https://school.programmers.co.kr/learn/courses/30/lessons/120818  옷가게 할인 받기
 
 function solution(price) {
     let answer=price;
@@ -13,7 +13,7 @@ function solution(price) {
 */
 
 
-// https://school.programmers.co.kr/learn/courses/30/lessons/120905
+// https://school.programmers.co.kr/learn/courses/30/lessons/120905  n의 배수 고르기
 
 function solution(n, numlist) {
     return numlist.filter(num => num % n ===0)
@@ -25,7 +25,7 @@ map은 모든 배열 원소에 주어진 함수를 호출한 값이란 걸 깜�
 */
 
 
-//https://school.programmers.co.kr/learn/courses/30/lessons/120825
+//https://school.programmers.co.kr/learn/courses/30/lessons/120825  문자 반복 출력하기
 
 function solution(my_string, n) {
     const myString = my_string.split('').map(str=>{
