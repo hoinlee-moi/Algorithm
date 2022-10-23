@@ -1,4 +1,4 @@
-// https://school.programmers.co.kr/learn/courses/30/lessons/120813
+// https://school.programmers.co.kr/learn/courses/30/lessons/120813  짝수는 싫어요
 
 function solution(n) {
     let answer = [];
@@ -13,7 +13,7 @@ function solution(n) {
 // for문으로 n이하의 정수를 하나하나 꺼내 나눗셈 나머지(%)를 이용 홀짝 구분
 
 
-//https://school.programmers.co.kr/learn/courses/30/lessons/120816
+//https://school.programmers.co.kr/learn/courses/30/lessons/120816  피자 나눠 먹기(3)
 
 function solution(slice, n) {
     let answer = 0;

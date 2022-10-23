@@ -1,4 +1,4 @@
-//https://school.programmers.co.kr/learn/courses/30/lessons/120906
+//https://school.programmers.co.kr/learn/courses/30/lessons/120906  자릿수 더하기
 
 function solution(n) {
     let answer = 0;
@@ -11,7 +11,7 @@ function solution(n) {
 
 // 자릿수를 구하기 위해 문자열 변환 후 for문을 통해 각 자리의 수를 숫자로 다시 변환하여 합산
 
-//https://school.programmers.co.kr/learn/courses/30/lessons/120910
+//https://school.programmers.co.kr/learn/courses/30/lessons/120910  세균 증식
 
 function solution(n, t) {
     let answer = n

@@ -1,4 +1,4 @@
-//https://school.programmers.co.kr/learn/courses/30/lessons/120854
+//https://school.programmers.co.kr/learn/courses/30/lessons/120854  배열 원소의 길이
 
 function solution(strlist) {
     const answer = strlist.map((str) =>{
@@ -10,7 +10,7 @@ function solution(strlist) {
 //처음엔 for문을 통해 하드 코딩하려고 하다가 배열이면 배열함수가 분명 쓸 수 있을 것이다 생각하고 map을 사용
 
 
-//https://school.programmers.co.kr/learn/courses/30/lessons/120822
+//https://school.programmers.co.kr/learn/courses/30/lessons/120822  문자열 뒤집기
 
 function solution(my_string) {
     let answer = my_string.split("").reverse().join("");
@@ -21,7 +21,7 @@ function solution(my_string) {
 // 다시 합치는 방법을 몰라 구글링 했고 join이라는 함수를 찾아 실행 해서 해결!
 
 
-//https://school.programmers.co.kr/learn/courses/30/lessons/120899
+//https://school.programmers.co.kr/learn/courses/30/lessons/120899  가장 큰 수 찾기
 
 function solution(array) {
     let answer = [];

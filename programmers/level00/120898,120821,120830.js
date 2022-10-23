@@ -1,18 +1,18 @@
-// https://school.programmers.co.kr/learn/courses/30/lessons/120898
+// https://school.programmers.co.kr/learn/courses/30/lessons/120898  편지
 
 function solution(message) {
     let answer = message.length*2;
     return answer;
 }
 
-//https://school.programmers.co.kr/learn/courses/30/lessons/120821
+//https://school.programmers.co.kr/learn/courses/30/lessons/120821  배열 뒤집기
 
 function solution(num_list) {
     let answer = num_list.reverse()
     return answer;
 }
 
-//https://school.programmers.co.kr/learn/courses/30/lessons/120830
+//https://school.programmers.co.kr/learn/courses/30/lessons/120830  양꼬치
 
 function solution(n, k) {
     let freeDrink = k-parseInt(n/10)

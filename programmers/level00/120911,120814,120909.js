@@ -1,4 +1,4 @@
-//https://school.programmers.co.kr/learn/courses/30/lessons/120911
+//https://school.programmers.co.kr/learn/courses/30/lessons/120911  문자열 정렬하기(2)
 
 function solution(my_string) {
     let answer = my_string.toLowerCase().split("").sort().join("");
@@ -15,7 +15,7 @@ const solution = (my_string) => my_string.toLowerCase().split("").sort().join(""
 
 
 
-//https://school.programmers.co.kr/learn/courses/30/lessons/120814
+//https://school.programmers.co.kr/learn/courses/30/lessons/120814  피자 나눠 먹기(1)
 
 function solution(n) {
     return Math.ceil(n/7);
@@ -25,7 +25,7 @@ function solution(n) {
 // 그래야 남은 사람이 생길경우 피자 한판을 더 주문할 수 있기 때문
 
 
-//https://school.programmers.co.kr/learn/courses/30/lessons/120909
+//https://school.programmers.co.kr/learn/courses/30/lessons/120909  제곱수 판별하기
 
 function solution(n) {
     return Number.isInteger(Math.sqrt(n))? 1 : 2;
