@@ -40,3 +40,28 @@ function solution(sides) {
 주어진 배열에서 큰 변의 길이와 작은 변의 길이를 구하여 큰 변의 길이가 가장 클 때의 값과 주어지지 않은 값이 가장 큰변의 길이일 때의 조건을 구하여
 반복문을 통해 해당하는 숫자들을 집어넣어 도출해냈다.
 */
+function solution(sides) {
+    return Math.min(...sides)*2-1
+}
+/*
+가장 작은 값의 곱에 -1  값의 규칙이 있거나 삼각형 공식을 이용한 수 같은데 좀 더 찾아봐야겠다.
+*/
+
+
+// https://school.programmers.co.kr/learn/courses/30/lessons/120884#  치킨쿠폰
+
+function solution(chicken) {
+    let coupon = 0;
+    let service = 0;
+    while(chicken>=10) {
+            service += Math.floor(chicken/10)
+            coupon = chicken%10
+            chicken = Math.floor(chicken/10)+coupon
+    }
+    return service;
+}
+
+/*
+10마리당 하나의 서비스 치킨이니 치킨을 10으로 나누면 서비스 치킨 수가 나온다. 서비스 치킨수에 남은 쿠폰을 더하면 가진 총 쿠폰 합이 나오는데
+거기서 다시 10으로 나눠 서비스 치킨을 구하고 또 거기서 남는 쿠폰을 더하는식으로 계속 반복을 돌려 계산
+*/
