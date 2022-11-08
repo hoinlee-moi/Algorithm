@@ -1,10 +1,3 @@
 function solution(n) {
-  const newN = n + "";
-  const newArr = newN
-    .split("")
-    .sort()
-    .reverse()
-    .join("");
-
-  return +newArr;
+    return +((n+"").split("").map(v=>+v).sort((a,b)=>b-a).join(""));
 }
