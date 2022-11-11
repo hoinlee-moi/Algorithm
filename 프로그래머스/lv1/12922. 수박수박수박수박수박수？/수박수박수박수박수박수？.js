@@ -6,3 +6,11 @@ function solution(n) {
     }
     return answer;
 }
+
+
+/*
+const waterMelon = n => {
+    return '수박'.repeat(n/2) + (n%2 === 1 ? '수' : '');
+}
+repeat 함수를 이용하는 방법도 있었다.
+*/
