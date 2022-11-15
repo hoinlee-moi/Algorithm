@@ -1,10 +1,10 @@
 # [unrated] 부대복귀 - 132266 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/132266) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/132266#) 
 
 ### 성능 요약
 
-메모리: 88.8 MB, 시간: 87.59 ms
+메모리: 88.9 MB, 시간: 100.65 ms
 
 ### 구분
 
