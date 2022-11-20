@@ -9,7 +9,6 @@ function solution(n) {
     }
     return answer;
 }
-
 /*
 for문으로 n까지의 숫자를 돌며 while문을 통해 3의 배수나 3이 글자에 들어가는지 체크한다.
 */
