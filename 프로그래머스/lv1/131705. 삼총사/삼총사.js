@@ -10,3 +10,9 @@ function solution(number) {
     }
     return answer;
 }
+
+
+/*
+반복이 총 3번 돌아가야 하기 때문에 3중 for문을 쓰려다 맨 처음은 while문으로 묶었다.
+forEach로 써도 되고 여러 반복문을 이용해도 괜찮았을 것 같다.
+*/
