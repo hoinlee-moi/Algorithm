@@ -61,7 +61,3 @@ function solution(balls, share) {
       Array.from({ length: share }, (_, i) => share - i).reduce((a, b) => a * b)
     );
   }
-
-
-
-  sdfsefsef
