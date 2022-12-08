@@ -5,3 +5,7 @@ function solution(arr) {
         return acc+cur
     },0);
 }
+
+/*
+reduce쓰기
+*/
