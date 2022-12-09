@@ -1,14 +1,14 @@
 function solution(s) {
     const map = new Map();
     let answer = [];
-    s.split("").forEach((v,i)=>{
-        if(map.get(v)>=0){
-            answer.push(i-map.get(v))
-            map.set(v,i)
+    for(let i=0; i<=s.length-1; i++){
+        if(map.get(s[i])>=0){
+            answer.push(i-map.get(s[i]))
+            map.set(s[i],i)
         }else{
-            map.set(v,i)
+            map.set(s[i],i)
             answer.push(-1)
         }
-    })
+    }
     return answer;
 }
