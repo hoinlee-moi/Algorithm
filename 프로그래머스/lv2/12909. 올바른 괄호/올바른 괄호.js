@@ -1,14 +1,15 @@
-function solution(s){
-    if(s[0]===")"||s[s.length-1]==="(") return false
-    const arr=s.split("")
-    let braket = [];
-    arr.forEach(v=>{
-        braket.push(v)
-        if(braket[braket.length-2]+braket[braket.length-1]==="()"){
-            braket.pop()
-            braket.pop()
-        } else if(braket[braket.length-2]==="("&&braket[braket.length-1]==="(") return false
-        
-    })
-    return braket.length===0?true:false
+function solution(s) {
+if(s.length === 1 || s[0] === ")") return false;
+
+let p = 0;
+
+for(let i = 0 ; i < s.length ; i++) {
+    if(s[i] === "(") {
+      p++;
+    } else {
+     if(p < 1) return false;
+    p--;
+}
+}
+return p > 0 ? false : true;
 }
