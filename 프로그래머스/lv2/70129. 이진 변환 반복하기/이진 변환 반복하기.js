@@ -1,12 +1,9 @@
 function solution(s) {
-    let zeroCount = 0
-    let cycle = 0
-    while(s!="1"){
-        let arr = s.split("")
-        let asArr = arr.filter(v=>v==="1")
-        zeroCount += s.length-asArr.length
-        s = asArr.length.toString(2)
-        cycle++
+    var answer = [0,0];
+    while(s.length > 1) {
+        answer[0]++;
+        answer[1] += (s.match(/0/g)||[]).length;
+        s = s.replace(/0/g, '').length.toString(2);
     }
-    return [cycle,zeroCount];
+    return answer;
 }
