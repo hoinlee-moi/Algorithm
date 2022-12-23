@@ -1,24 +1,18 @@
 function solution(n) {
     if(n===1) return 1
     let answer = 1;
-    let num = 1;
     let sumArr = [];
-    while(num<=Math.ceil(n/2)+1) {
+    for(let i=1; i<=Math.ceil(n/2)+1;i++){
         let sum = sumArr.reduce((acc,cur)=>{return acc+cur},0)
         if(sum>n) {
-            while(sum>n){
-                let a =sumArr.shift()
-                sum -= a
-            } 
+            while(sum>n) sum -= sumArr.shift()
         }
         if(sum<n) {
-            sumArr.push(num)
-            num++
+            sumArr.push(i)
         }
         if(sum===n){
             answer++
-            sumArr.push(num)
-            num++
+            sumArr.push(i)
         }
     }
     return answer;
