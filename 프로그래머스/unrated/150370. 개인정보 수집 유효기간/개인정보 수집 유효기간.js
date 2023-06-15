@@ -26,7 +26,6 @@ function solution(today, terms, privacies) {
                 dateArr[0]-=1
             }else dateArr[1] -=1
         }
-        console.log(todayArr,dateArr)
         for(let j=0; j<=todayArr.length-1; j++) {
             if(Number(todayArr[j])>Number(dateArr[j])){
                 result.push(i+1)

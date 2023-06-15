@@ -1,10 +1,10 @@
 # [unrated] 개인정보 수집 유효기간 - 150370 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/150370#) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/150370) 
 
 ### 성능 요약
 
-메모리: 34.1 MB, 시간: 9.89 ms
+메모리: 33.4 MB, 시간: 0.41 ms
 
 ### 구분
 
