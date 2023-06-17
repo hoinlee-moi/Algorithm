@@ -5,8 +5,6 @@ function solution(park, routes) {
         if(park[i].includes("S")){
             height = i
             width = park[i].indexOf("S")
-            let str = park[i].replace("S","O")
-            park[i] = str
             break;
         }
     }
