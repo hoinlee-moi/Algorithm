@@ -1,19 +1,12 @@
 function solution(k, tangerine) {
-    let result = 0;
-    let countArr = [0];
-    tangerine.forEach(v=>{
-        countArr[v] = countArr[v]?countArr[v]+1:1
-    })
-    countArr.sort((a,b)=>{
-        return b-a
-    })
-    for(let i=0; i<=countArr.length-1; i++) {
-        if(k-countArr[i]===0||k-countArr[i]<0){
-            result++
-            break;
-        }
-        k -= countArr[i]
-        result++
-    }
-    return result;
+  let answer = 0;
+  const tDict = {};
+  tangerine.forEach((t) => tDict[t] = (tDict[t] || 0) + 1);
+  const tArr = Object.values(tDict).sort((a, b) => b - a);
+  for (const t of tArr) {
+    answer++;
+    if (k > t) k -= t;
+    else break;
+  }
+  return answer;
 }
