@@ -1,40 +1,28 @@
-function solution(s) { 
-    let count = 0
-    for(let i=0; i<=s.length-1;i++) {
-        let stack = []
-        let str = ""
-        str += s.slice(i,s.length)
-        if(i>0) str += s.slice(0,i)
-        stack.push(str[0])
-        for(let j=1; j<=str.length-1;j++){
-            stack.push(str[j])
-            if(str[j]===")"){
-                if(stack[stack.length-2]!=="(") break;
-                else {
-                    stack.pop()
-                    stack.pop()
-                }
-               
-            }
-            if(str[j]==="}"){
-                if(stack[stack.length-2]!=="{") break;
-                else {
-                    stack.pop()
-                    stack.pop()
-                }
-            }
-            if(str[j]==="]"){
-                if(stack[stack.length-2]!=="[") break;
-                else {
-                    stack.pop()
-                    stack.pop()
-                }
-            }
+function solution(s) {
+    if(s.length % 2 === 1) return 0;
 
+    let answer = 0;
+    const mapping = { "}" : "{", "]" : "[", ")" : "("};
+
+    for(let i = 0; i < s.length; i++) {
+        const stack = [];
+        const rotate = s.slice(i) + s.slice(0, i);
+        let flag = true;
+
+        for(let j = 0; j < s.length; j++) {
+            if(rotate[j] === "[" || rotate[j] === "(" || rotate[j] === "{" )
+                stack.push(rotate[j]);
+            else {
+                const last = stack.pop();
+                if(last !== mapping[rotate[j]]) {
+                    flag = false
+                    break;
+                }
+            }
         }
-        if(stack.length===0) {
-            count++
-        }
+
+        if(flag) answer++;
     }
-    return count;
+
+    return answer;
 }
