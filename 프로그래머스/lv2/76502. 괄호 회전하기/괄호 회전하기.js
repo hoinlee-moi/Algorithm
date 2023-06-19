@@ -3,7 +3,7 @@ function solution(s) {
     for(let i=0; i<=s.length-1;i++) {
         let stack = []
         let str = ""
-        str += s.slice(i,s.length)
+        str += s.slice(i)
         if(i>0) str += s.slice(0,i)
         stack.push(str[0])
         for(let j=1; j<=str.length-1;j++){
@@ -14,7 +14,6 @@ function solution(s) {
                     stack.pop()
                     stack.pop()
                 }
-
             }
             if(str[j]==="}"){
                 if(stack[stack.length-2]!=="{") break;
@@ -30,7 +29,6 @@ function solution(s) {
                     stack.pop()
                 }
             }
-
         }
         if(stack.length===0) {
             count++
