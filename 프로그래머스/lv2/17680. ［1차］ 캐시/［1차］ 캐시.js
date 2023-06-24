@@ -1,11 +1,8 @@
 function solution(cacheSize, cities) {
     let answer = 0;
+     if(cacheSize===0) return 5 * cities.length
     let obj = {}
     for(let i=0; i<=cities.length-1;i++) {
-        if(cacheSize===0) {
-            answer+=5
-            continue;
-        }
         let city = cities[i].toLowerCase()
         let key = getKeyByValue(obj,city)
         if(key!==undefined){
