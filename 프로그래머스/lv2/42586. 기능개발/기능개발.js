@@ -1,7 +1,7 @@
 function solution(progresses, speeds) {
     let answer = [];
     let success = progresses.map((v,i)=>{
-        return Math.ceil((100-v)/speeds[i])+1
+        return Math.ceil((100-v)/speeds[i])
     })
     let compare = success[0]
     let dep = 1
