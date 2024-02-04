@@ -1,3 +1,2 @@
-function solution(n, k) {
-    return Array.from({length:~~(n/k)},(_,i)=>(i+1)*k);
-}
+const solution = (n, k) => 
+     Array.from({length:~~(n/k)},(_,i)=>(i+1)*k);
