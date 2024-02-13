@@ -1,3 +1,3 @@
 function solution(myString, pat) {
-    return [...myString].map(v=>v==='A'?'B':'A').join('').includes(pat)?1:0;
+    return [...myString].reduce((acc,cur)=>acc+(cur==='A'?'B':'A'),'').includes(pat)?1:0;
 }
