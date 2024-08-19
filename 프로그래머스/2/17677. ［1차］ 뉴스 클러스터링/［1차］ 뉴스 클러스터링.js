@@ -3,7 +3,6 @@ function solution(str1, str2) {
     const multi2 = multiset(str2)
     const unionResult = union(multi1,multi2)
     const interResult = inter(multi1,multi2)
-    console.log(unionResult,interResult)
     if(interResult===0&&unionResult===0) return 65536
     return ~~(unionResult/interResult*65536);
 }
