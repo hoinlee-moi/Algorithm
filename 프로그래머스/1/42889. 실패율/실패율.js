@@ -1,26 +1,46 @@
-function solution(N, stages) {
-    let arr = [];
-    for(let i=1; i<=N; i++) {
-        let allPlayer = stages.filter(v=>v>=i).length
-        let stagePlayer = stages.filter(v=>v===i).length
-        if(allPlayer===0){
-            arr.push(0)
+function solution(N,stages) {
+    const challenger = new Array(N + 2).fill(0);
+    for(const stage of stages) {
+        challenger[stage] += 1;
+    }
+    const fails = {};
+    let total = stages.length;
+    
+    for(let i =1; i<=N; i++) {
+        if(challenger[i] === 0) {
+            fails[i] = 0;
             continue;
         }
-        let failureRate = (stagePlayer/allPlayer)
-        arr.push(failureRate)
-    } 
-    let stageFail = [...arr]
-    stageFail.sort((a,b)=>b-a);
-    const answer = stageFail.map((v,i)=>{
-        let stage = 0
-        if(arr.indexOf(v)===arr.lastIndexOf(v)) return arr.indexOf(v)+1
-        stage = arr.indexOf(v)+1
-        arr.splice(arr.indexOf(v),1," ")
-        return stage
-    })
-    return answer
+        fails[i] = challenger[i] / total;
+        total -= challenger[i]
+    }
+    const result = Object.entries(fails).sort((a,b)=>b[1] - a[1])
+    
+    return result.map((v)=> Number(v[0]))
 }
+// function solution(N, stages) {
+//     let arr = [];
+//     for(let i=1; i<=N; i++) {
+//         let allPlayer = stages.filter(v=>v>=i).length
+//         let stagePlayer = stages.filter(v=>v===i).length
+//         if(allPlayer===0){
+//             arr.push(0)
+//             continue;
+//         }
+//         let failureRate = (stagePlayer/allPlayer)
+//         arr.push(failureRate)
+//     } 
+//     let stageFail = [...arr]
+//     stageFail.sort((a,b)=>b-a);
+//     const answer = stageFail.map((v,i)=>{
+//         let stage = 0
+//         if(arr.indexOf(v)===arr.lastIndexOf(v)) return arr.indexOf(v)+1
+//         stage = arr.indexOf(v)+1
+//         arr.splice(arr.indexOf(v),1," ")
+//         return stage
+//     })
+//     return answer
+// }
 
 /*
 function solution(N, stages) {
