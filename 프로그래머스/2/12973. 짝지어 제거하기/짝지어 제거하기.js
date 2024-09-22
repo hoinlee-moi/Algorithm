@@ -1,10 +1,9 @@
 function solution(s){
     if(s.length % 2 != 0) return 0;
     const stack = []
-    for(const a of s) {
-        if(stack.length && stack.at(-1) === a) {
-            stack.pop()
-        } else stack.push(a)
+    for(let i=0; i<=s.length-1; i+=1){
+        if(stack.length && stack.at(-1) === s[i]) stack.pop()
+        else stack.push(s[i])
     }
-    return stack.length?0:1
+    return stack.length ? 0 : 1;
 }
