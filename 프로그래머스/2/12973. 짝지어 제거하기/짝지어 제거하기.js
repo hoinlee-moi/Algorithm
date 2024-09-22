@@ -1,10 +1,12 @@
 function solution(s){
-    if(s.length % 2 !== 0) return 0;
-    const stack = []
-    for(const a of s) {
-        if(stack.length && stack.at(-1) === a) {
-            stack.pop()
-        } else stack.push(a)
+    if(s.length%2!=0) return 0
+    let str = [];
+    for(let i=0;i<=s.length-1;i++) {
+        str.push(s[i])
+        if(str[str.length-1]===str[str.length-2]){
+            str.pop()
+            str.pop()
+        }   
     }
-    return stack.length?0:1
+    return str.length===0?1:0
 }
